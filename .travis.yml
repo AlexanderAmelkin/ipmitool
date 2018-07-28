@@ -1,4 +1,5 @@
 language: C
+sudo: enabled
 before_install:
   - sudo apt-get install -y libssl-dev
 before_script:
@@ -6,4 +7,4 @@ before_script:
 script:
  - ./configure --enable-intf-dummy
  - make
- - make install
+ - sudo make install
