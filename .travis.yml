@@ -1,0 +1,8 @@
+language: c
+before_script:
+	- ./bootstrap
+script:
+	- ./configure --enable-intf-dummy
+	- make
+install:
+	- make install
